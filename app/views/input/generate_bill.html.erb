@@ -1,0 +1,38 @@
+<!-- app/views/input/generate_bill_result.html.erb -->
+<h1>Generated Bill</h1>
+
+<p>Customer Email: <%= @customer_email %></p>
+
+<h2>Bill Details</h2>
+<table>
+  <thead>
+  <tr>
+    <th>Product</th>
+    <th>Quantity</th>
+    <th>Unit Price</th>
+    <th>Purchased Price</th>
+    <th>Tax</th>
+    <th>Tax Pay</th>
+    <th>Total</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @line_items.each do |line_item| %>
+    <tr>
+      <td><%= line_item[:product_name] %></td>
+      <td><%= line_item[:quantity] %></td>
+      <td><%= number_to_currency(line_item[:unit_price]) %></td>
+      <td><%= number_to_currency(line_item[:purchased_price]) %></td>
+      <td><%= number_to_percentage(line_item[:tax_percentage], precision: 2) %></td>
+      <td><%= number_to_currency(line_item[:tax_pay]) %></td>
+      <td><%= number_to_currency(line_item[:total]) %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<p>Total Price Without Tax: <%= number_to_currency(@total_price_without_tax) %></p>
+<p>Total Tax Payable: <%= number_to_currency(@total_tax_payable) %></p>
+<p>Net Price: <%= number_to_currency(@net_price) %></p>
+<p>Rounded Down Value: <%= number_to_currency(@rounded_down_value) %></p>
+<p>Balance Payable to Customer: <%= number_to_currency(@balance_payable_to_customer) %></p>
