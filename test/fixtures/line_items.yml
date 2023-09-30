@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  product_name: MyString
+  product_id: 1
+  quantity: 1
+  unit_price: 9.99
+  purchased_price: 9.99
+  tax: 9.99
+  tax_pay: 9.99
+  total: 9.99
+
+two:
+  product_name: MyString
+  product_id: 1
+  quantity: 1
+  unit_price: 9.99
+  purchased_price: 9.99
+  tax: 9.99
+  tax_pay: 9.99
+  total: 9.99

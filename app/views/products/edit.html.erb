@@ -1,0 +1,32 @@
+<!-- app/views/products/edit.html.erb -->
+<div class="whole">
+  <div class="floating">
+  </div>
+<div class="container">
+  <h1 class="custom-h2">Edit Product</h1>
+
+  <%= form_with(model: @product, local: true, html: { class: 'your-form-class' }) do |form| %>
+    <div class="custom-field">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: 'custom-input' %>
+    </div>
+
+    <div class="custom-field">
+      <%= form.label :price %>
+      <%= form.number_field :price, class: 'custom-input' %>
+    </div>
+
+    <div class="custom-field">
+      <%= form.label :tax_percentage %>
+      <%= form.number_field :tax_percentage, class: 'custom-input' %>
+    </div>
+    <div class="whole-1">
+    <div class="actions">
+      <%= form.submit 'Update Product', class: 'custom-button' %>
+    </div>
+  <% end %>
+
+  <%= link_to 'Back', products_path, class: 'custom-button back' %>
+  </div>
+</div>
+</div>

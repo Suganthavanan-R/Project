@@ -1,0 +1,31 @@
+<!-- app/views/products/index.html.erb -->
+
+<h1 style="text-align: center;">Product List</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th style="text-align: center;">Name</th>
+    <th style="text-align: center;">Price</th>
+    <th style="text-align: center;">Tax Percentage</th>
+    <th style="text-align: center;">Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.name %></td>
+      <td><%= number_to_currency(product.price, unit: '₹') %></td>
+      <td><%= product.tax_percentage %>%</td>
+      <td>
+        <%= link_to 'Edit', edit_product_path(product), class: "custom-button-3"  %>
+        <%= link_to 'Delete', product, class: "custom-button-3",  method: :delete, data: { confirm: 'Are you sure?' } %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+<div class="vb">
+  <%= link_to 'New Product', new_product_path, class: "custom-button" %>
+  <%= link_to 'Back', root_path, class: "custom-button back" %>
+</div>

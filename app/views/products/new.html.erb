@@ -1,17 +1,30 @@
 <!-- app/views/products/new.html.erb -->
+<div class="whole">
+    <div class="floating">
+    </div>
+  <div class="container">
+    <h2 class="custom-h2">Create a New Product</h2>
 
-<%= form_with(model: @product, local: true) do |form| %>
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+    <%= form_with(model: @product, local: true, html: { class: 'your-form-class' }) do |form| %>
+      <div class="custom-field">
+        <%= form.label :name %>
+        <%= form.text_field :name, class: 'custom-input' %>
+      </div>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.number_field :price %>
-  </div>
+      <div class="custom-field">
+        <%= form.label :price %>
+        <%= form.number_field :price, class: 'custom-input' %>
+      </div>
 
-  <div class="actions">
-    <%= form.submit 'Create Product' %>
+      <div class="custom-field">
+        <%= form.label :tax_percentage %>
+        <%= form.number_field :tax_percentage, class: 'custom-input' %>
+      </div>
+
+      <div class="actions">
+        <%= form.submit 'Create Product', class: 'custom-button' %>
+        <%= link_to 'Back', root_path, class: "custom-button" %>
+      </div>
+    <% end %>
   </div>
-<% end %>
+</div>

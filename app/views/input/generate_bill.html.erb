@@ -1,38 +1,91 @@
-<!-- app/views/input/generate_bill_result.html.erb -->
-<h1>Generated Bill</h1>
+<div class="background">
+  <div class="main1"><h2 class="generated-bill-title">Generated Bill</h2>
 
-<p>Customer Email: <%= @customer_email %></p>
+    <div class="fle">
+      <p class="email-field">Customer Email: </p>
+      <p class="email"><%= @customer_email %></p>
 
-<h2>Bill Details</h2>
-<table>
-  <thead>
-  <tr>
-    <th>Product</th>
-    <th>Quantity</th>
-    <th>Unit Price</th>
-    <th>Purchased Price</th>
-    <th>Tax</th>
-    <th>Tax Pay</th>
-    <th>Total</th>
-  </tr>
-  </thead>
-  <tbody>
-  <% @line_items.each do |line_item| %>
-    <tr>
-      <td><%= line_item[:product_name] %></td>
-      <td><%= line_item[:quantity] %></td>
-      <td><%= number_to_currency(line_item[:unit_price]) %></td>
-      <td><%= number_to_currency(line_item[:purchased_price]) %></td>
-      <td><%= number_to_percentage(line_item[:tax_percentage], precision: 2) %></td>
-      <td><%= number_to_currency(line_item[:tax_pay]) %></td>
-      <td><%= number_to_currency(line_item[:total]) %></td>
-    </tr>
-  <% end %>
-  </tbody>
-</table>
+    </div>
 
-<p>Total Price Without Tax: <%= number_to_currency(@total_price_without_tax) %></p>
-<p>Total Tax Payable: <%= number_to_currency(@total_tax_payable) %></p>
-<p>Net Price: <%= number_to_currency(@net_price) %></p>
-<p>Rounded Down Value: <%= number_to_currency(@rounded_down_value) %></p>
-<p>Balance Payable to Customer: <%= number_to_currency(@balance_payable_to_customer) %></p>
+    <h3 class="bill-section-title">BILL SECTION</h3>
+    <table class="bill-table">
+      <thead>
+      <tr>
+        <th class="product-name-header">Product Name</th>
+        <th class="unit-price-header">Unit Price</th>
+        <th class="quantity-header">Quantity</th>
+        <th class="purchased-price-header">Purchased Price</th>
+        <th class="tax-header">Tax</th>
+        <th class="tax-pay-header">Tax Pay</th>
+        <th class="total-header">Total</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @line_items.each_with_index do |line_item, index| %>
+        <tr class="line-item-row">
+          <td class="product-name"><%= line_item[:product_name].capitalize() %></td>
+          <td class="unit-price"><%= number_to_currency(line_item[:unit_price], unit: '₹') %></td>
+          <td class="quantity"><%= line_item[:quantity] %></td>
+          <td class="purchased-price"><%= number_to_currency(line_item[:purchased_price], unit: '₹') %></td>
+          <td class="tax"><%= number_to_percentage(line_item[:tax], precision: 0) %></td>
+          <td class="tax-pay"><%= number_to_currency(line_item[:tax_pay], unit: '₹') %></td>
+          <td class="total"><%= number_to_currency(line_item[:total], unit: '₹') %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <div class="form-group">
+      <h3>BALENCE DENOMINATIONS</h3>
+      <div class="form-group1">
+        <div class="denomination">
+          <label for="denomination_500">500</label>
+          <input type="number" name="denominations[500]" id="denomination_500" class="form-control denomination-input" value="<%= @five_hundred %>" readonly>
+        </div>
+
+        <div class="denomination">
+          <label for="denomination_50">50</label>
+          <input type="number" name="denominations[50]" id="denomination_50" class="form-control denomination-input" value="<%= @fifty %>" readonly>
+        </div>
+
+        <div class="denomination">
+          <label for="denomination_20">20</label>
+          <input type="number" name="denominations[20]" id="denomination_20" class="form-control denomination-input" value="<%= @twenty %>" readonly>
+        </div>
+
+        <div class="denomination">
+          <label for="denomination_10">10</label>
+          <input type="number" name="denominations[10]" id="denomination_10" class="form-control denomination-input" value="<%= @ten %>" readonly>
+        </div>
+
+        <div class="denomination">
+          <label for="denomination_5">5</label>
+          <input type="number" name="denominations[5]" id="denomination_5" class="form-control denomination-input" value="<%= @five %>" readonly>
+        </div>
+
+        <div class="denomination">
+          <label for="denomination_2">2</label>
+          <input type="number" name="denominations[2]" id="denomination_2" class="form-control denomination-input" value="<%= @two %>" readonly>
+        </div>
+
+        <div class="denomination">
+          <label for="denomination_1">1</label>
+          <input type="number" name="denominations[1]" id="denomination_1" class="form-control denomination-input" value="<%= @one %>" readonly>
+        </div>
+      </div>
+    </div>
+
+    <div class="end">
+      <p class="total-price">Total Price Without Tax: <%= number_to_currency(@total_price_without_tax, unit: '₹') %></p>
+      <p class="total-tax">Total Tax Payable: <%= number_to_currency(@total_tax_payable, unit: '₹') %></p>
+      <p class="net-price">Net Price: <%= number_to_currency(@net_price, unit: '₹') %></p>
+      <p class="rounded-down-value">Rounded Down Value: <%= number_to_currency(@rounded_down_value, unit: '₹') %></p>
+      <p class="balance-payable">Balance Payable to
+        Customer: <%= number_to_currency(@balance_payable_to_customer, unit: '₹') %></p>
+    </div>
+  </div>
+</div>
+<div class="vb-1">
+  <%= link_to 'Back', root_path,class: "custom-button" %>
+  <%= link_to 'Products', products_path, class: "custom-button two" %>
+  <%= link_to 'New Products', new_product_path, class: "custom-button four" %>
+</div>

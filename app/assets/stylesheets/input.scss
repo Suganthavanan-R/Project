@@ -1,0 +1,415 @@
+// Place all the styles related to the Input controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+/* Apply styles to the main container */
+
+
+.background {
+  background-image: url("https://img.freepik.com/free-photo/abstract-blur-supermarket_74190-5265.jpg?size=626&ext=jpg");
+   background-repeat: no-repeat;
+  background-size: cover;
+}
+.end{
+  text-align: right;
+  padding-right: 100px;
+}
+.main {
+    font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font you want to use */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    max-width: 60%;
+    max-height: 50%;
+    opacity: 0.9;
+  padding-bottom: 60px;
+  }
+  /* Style the Customer Email input field */
+  .form-control {
+    width: 80%;
+    height: 10%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+  .form-control:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+  }
+
+  /* Style the "Generate Bill" button */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* Add hover effect to buttons */
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+
+  /* Style the table */
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  table tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Set your desired background color for odd rows */
+  }
+
+  /* Style even rows */
+  table tr:nth-child(even) {
+    background-color: #e0e0e0; /* Set your desired background color for even rows */
+  }
+  /* Style table headers */
+  table th {
+    background-color: #c7c7c7; /* Set your desired milder background color for table headers */
+    color: #333; /* Set your desired text color for table headers */
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Style table cells */
+  table td {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  /* Style the "Add New" button */
+  .btn-add-row {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add hover effect to "Add New" button */
+  .btn-add-row:hover {
+    background-color: #1f8d46;
+  }
+
+  /* Style the "Delete" button */
+  .btn-remove-row {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add hover effect to "Delete" button */
+  .btn-remove-row:hover {
+    background-color: #c82333;
+  }
+  /* Style the "Bill Section" header */
+  h1.bill-section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Change the color as needed */
+  }
+
+  /* Style the table */
+  table#products-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+
+  /* Style table cells */
+  table#products-table td {
+    border: none;
+    outline: none;
+  }
+
+  /* Style the select input */
+  .product-select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Style the quantity input field */
+  form.number_field.form-control {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Style the "Delete" button */
+  .btn-remove-row {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add hover effect to "Delete" button */
+  .btn-remove-row:hover {
+    background-color: #c82339;
+  }
+
+  /* Style the "Add New" button */
+  .btn-add-row {
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /* Add hover effect to "Add New" button */
+  .btn-add-row:hover {
+    background-color: #fff;
+    color: #28a745;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  /* Style the "Cancel" button */
+  .btn-secondary {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+  .denomination-input{
+    width: 17vw;
+  }
+  .form-group1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .denomination{
+    width: 22vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  .email-field {
+    max-width: 300px; /* Adjust the maximum width as needed */
+  }
+  .cash-paid-field {
+    max-width: 150px; /* Adjust the maximum width as needed */
+  }
+  /* CSS for Generated Bill Page */
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .cancel{
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: darksalmon;
+    transition: color .3s ease-in-out, box-shadow .1s ease-in-out;
+  }
+  .cancel:hover{
+    box-shadow: inset 100px 0 0 0 red;
+    color: white ;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  .white-background{
+    background: lightgrey;
+    padding: 5px;
+  }
+  .fle{
+    display: flex;
+    align-items: center;
+  }
+  .email{
+    background: white;
+    margin-left: 15px;
+    padding: 3px 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+  }
+  .email:hover{
+    background: #ccc;
+    margin-left: 15px;
+    padding: 3px 10px;
+    border: 1px black solid;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+  }
+
+/* app/assets/stylesheets/products.css */
+
+.container {
+  text-align: center;
+  margin: 10% auto; /* Center the container horizontally */
+  padding: 20px;
+  width: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+  background-color: white; /* Add a background color */
+}
+.container:hover{
+  border: 2px solid #ff6ec4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.custom-h2 {
+  margin-bottom: 20px;
+}
+
+.custom-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.custom-input {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Add a border to the input fields */
+}
+
+.custom-button {
+  padding: 10px 20px;
+  background-color: #ff6ec4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.custom-button:hover {
+  background-color: #ff4f9a;
+  font-weight: bold;
+}
+.floating {
+  width: 240px;
+  height: 181px;
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQUEhQUFBQZExgYGyAbGhsYGBgaHRobHBgaGxsYHBobIy0kGyArIxkaJkQlKS4wNjY0GyQ5PzkxPi0yNDABCwsLEA8QHhISHj4rJCk1NjI5MDQ7MjI/Pjg1PjkwPz44PDgyNjI2MjI+MjAyMjIyMjI0PzYyMjsyPDA0NjIyMv/AABEIAMIBAwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYBAwQHAv/EAEUQAAIBAgUBBQUDCAcIAwAAAAECAAMRBAUSITFBBhMiUWEyUnGBkRRCoSMzYnKSk7HSBxVTgqLR8CREY7LB0+HxQ3PC/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAIDBAEF/8QAKhEAAgIBBAEDAwQDAAAAAAAAAAECEQMEEiExQRNRYQUioTKBsdEjcZH/2gAMAwEAAhEDEQA/APZoiIAiIgCIiAIiIAiIgCIiAIiIB8zMhsTm5FZqSAeADUTfcnoLcfGSlGoGUMOspjmhKTinyiTg0k2boiJcREREAREQBERAEREAREQBERAEREAREQBERAEREAREQBERAETEzAMRIbNe0FGhcX1uPuqeD+keF+HPpK3iMZicWLlu6pHYDezee3L/AD226GDqTbpFsbOsOH096t/S5H7QFvxncrggEEEHgjcGed18lAUlahLdNShQfPxajaS/ZfMWp1Pstbwlt0v71iSt/UAn4qepnLR2UJR7OHEBzVrVKe7JVdHHmNRZT9Db5S2ZTXDAgehHz5/H+MreCraMbixsRr8QtvYgFT/iP19JOYRQlZVX2WDW/jt6f5zyY/Znte/8miXMK+CbmhMQrarH2TZh1B9R08/hvN0hM/buh9qUXNMaXHv0ydwfVSdQ+fmZ6zdKzKdeYZlToKWqtpFxba5N77AdeD8p8ZTimq66h2W+lV+HLX63vb5Ty/FZ3Uxahqlvyaabrw3UsfXj6CXrJa1RkSjRIVUUCpU2Y6iLkIDte5O5v9LXyLK5ZK8I5ZaonwgsALk+p5M+5sOiJrZwLXIF+Lnmfd5y0DMRE6BERAEREAREQBERAEREAREQBETEAhO0mf0sFR7ypdix0qgtdja/XgAbk/8AgSByH+kWhiKgp1ENAnglgyn0JsLTH9JuQ1MTRSrS8RoaiU81YC5A6kaRt5E/A+W1MZTGHWklMowcOzlrm4Ur4Ra63uCd/uiZsmRxl8Hs6LR4s+JcXJvl31+3k95zPNqWHUF23a5VRuzWtcjoBuNzYbgckSt1czxOKOlPyNMmw08t6aja/wCA5G8o2WZua4CVGJqBVRST7SpqKgeRGttpZ8xqU6VXuw7FyoKqtybKQBf3QdJ24M7PP9qaV26MOfSywTccnjz7nWmEw1NrMprMObtdV+gAPwtOvEY1WGpzso+6LWUDoAOnwmnFOtMM2m5HpbracWNxVKtRqIGCvouVuCRbfexvpPBv0Msi7kt3Rb6aUG4rkk1xCVfHT1FDcqSNNwNr+u+3ylU7W1avc98hIemVYMDcgpUVgR14nVhsU1JO7qFV0tawvexBBH1A2/CaczrJVw1U02DKUaxU3FwpPSWZVFSezozRk5QSn2bMpzM4uu+IpizuiOU6Myoq1E389NwfSXPCYkOlN77agR0IsbEEdOonlPYvGaHYL4StTa5tvZLi3kSW+RnqVagAxZfYqe0vuuB7Q8r2+tjPJyqsjZYv00WeVztbi+6pHWAUqA0yb7hmBAup9odbjcW4sSRNJiVFNXYhQQCSTbmVrtpgXxNA92AABqZ2NgyqQ2kAXY9TxzbzM9Nu42jJR5xkVFlpqjC5D+P8AfkLEz0rset6ZVSVGos1lILE8AsduLbL5cynJl6imA7MNzdGKIabmxAdfbIN+R5/T0nLx3VBNbAWA2sAB6KBvv6kn5zDhVTlOXCRzY0yTmCZHvmI8rDpc2J+AmjF1TUXSLqPQkXlOb61pYJ1K2i1YpMxmWFaq9N0ddKXuCDve3DDjjykjhFIRdQsbbi97el+sgcMAjWYNxa/l+lcf63knk9RyhFQ6iNw21ipvb12seZDQ6rFnyerVSaa7vhE8kHFVdolIiJ7RQIiIAiIgCIiAIiIAiIgCIiAIiIB8ygds+wgrXrYYBH5ZejeZFuD6Dn48+gRIyipKmW4c88Mt0HTPFMv7D4k1S1kdEAZvGysWG5phQAwba17geJSD0llfFFe7q03dVUhToVC1t7bv7INrHfY26MJNdpDUStqov3baUcnYAhXKsDf3tSD+7K1SpFKjDQ1SnVNmCkMEGmxtbi5CnfYEXlbxqKqKLc2ry5pXNnXmNUYmnUKMVDFltyQbk7tffkGw6W3lOwuKt+TpjS2pQQiF/vjUthbVcA/XpJ3NcmqMlFlXvHUd29rDUq/m6wv5oACOfZ8jNWWYF6Zb8i6t7QZV3Vh1Gx/9jmQ3NdonjyVHbZyZXSqLhxiye9rFtb622AuSwG1gx51ACbXrUzim7umyU8TTv7JC94fa9Cd7HyLesnsNgabU2ptTFMNc2JdACenIsPSV/OsiqU3pim7VQdkBYnSPdO9lUelr6uLjfJD6jCUnFpp/Ko0YtKpyUZSSvyVrskB3rIxtqbn8L7/ABnrGX41u7alU2dBzt4hyrjzlLfIaqrqCKzDdlQ+LzNgeTvfrvObHZrVxC06aC2lLalLBjc9TYH0tsJX6iyttcolPTKL2xd/JO532rDUqOFpm9Que8A5Ch7jccbEn5CfWS1adSnXCljVpd292JJUqdNQ7chQW+kp1Tw92wZ2qawrEjbQbWF/rPYOzBUL4QBqJJsAL3N77Tfi+6H4MurwPBJK7vmyqYmsiqcW7pUrq97cWVfC9PQbWPI6m4+EkMJiiBdQdTsWVWJIphvugdNrbCfPbjIwtVMRSp62d9LgnYXW2oXIC7An4g+c14HAVl1VCFNh731JsNt9vlPE+rOorHfzXuRxyj2yx4GkpZQx1M3md9gTtNuYY2lRYKwYki+1jYXtc7yv5Ljv9pTUbsSRa+w8LC3w/wBWkvisiotW713dGa2ysSpt8V2+Uh9P0EJ6dtxTlfbVnXOKyK7r4Nub4JGpBgpY/dN3BAYb2ZPEnA3Am7s1he7om5LXY7s2s2GwGvlhsdzvvvOvEm1O6+yALCxvsQL7ni07Ka2AE9bDi2ZmoxSSS692Z5StGyIieiViIiAIiIAiIgCIiAIiIAiIgCIiAIiIBAdqKPgFRR4hdLjYkMraVv8Ar6frKZ2v00FpaT3yugZWdFa97+I7WH3f2p6HnFMtQqW3ZRqX9ZCHH4qJSe1eH7zAIV3NJ2p/3CNSfgKchNWgQtbMqz4Fq1PSatK5a6K2tF3fpcWB17f8TyE0YDtNUqUDUspZSgI8YHiVidgw92cGWY40hQqA7d46sObq6UunXdQflbgmacxyZqSVjQfTSqNSqUSviCqVqhkv10lwPVdB6ynI5bbuicZKPLRbMvzcuCSNNhfZn8wPvMfOaaXacu7qEYhA1iGTfQuo7GmbcHrKRluKxN8RQYjUKOpG02JtUp7+R2vMZDWqUq5SorFXWpZrcN3T3B+IH1mSLyruV/HHJfvwt0kei4bNdRW9JlLG1yEb/l0zkzDMMIlVadSkmpyLEUFO7mwuwe4ues4MtzVSEIuw1KNgdtTAX3+MrFDFPUxbNWc02BvZTsAmygE9LfX0kdLlyzlbqunwWz9KN0+fFMuRr4BlKGiwBOr83iUUleoZVINvQySw2a4dHFNKoRhtpDve5AsLMgvsR16zRgMwWnXZmpVGW5UuzF0Avp9i3+cq3bTErTxeGqBQADuVAFwQfFtyR/0noO1F0jK5qXDb4LzjsVTqBVqViNO4vUoqTcW3u1+D+M3UxZCquQrC19muP7pseJEZJVoMVZ9JuiHUQDsEAv8A4Z85hm+FwxTvKZqqGZwiopG+rTqDeFQNbfNRYTyHkhmzbZ402vN+CMYOTpGKXZ11rLWTEPqVtQ/ItYH6kfhJDPs/rUKANSooJbSCilXNwSfC23A5EqWJzaniK9B6KGirPUUrZVNwwcbLsRpqKPlJoYDvEZah1LsQHNxcAi4BYb+L8J6KhGK2wVX8mjFUZL1FwnyvJ8Zd2w1VKYeqwVTuNJsR1vwCbX5Oxno+U5imIopWp30Ne1xY7Eg7fEGeW0uztMDXpsbA7E7DcMBv6iepZVgEw9FKNMEIo2ubncknf4kyWni03ZdrZaZxTxJp/iv7O+IiajzhERAEREAREQBERAEREAREQBERAEREA+TvtKVUT8jXotfcAJtw9NynyLab3l2lF7VYeoGrd02l7a08iXTTpPodFQemq/M46rkFSxOSVDRsKPi7zVp1qALqRyD8JuyjCVzTqYatT0Ls9JgbordUJ6C9+ejfoCQ2eYllbFakVkD0HUBFvodX1NcC7WZrfI+cj+z2HpDvXoVmF0LBQQNJWqjBgp6DTbcEEHeZZqMbUraa7IuRYjkmIXErU7pmUUnVlDUxY+FlABYbkrbfy3tJbDZMzKC9MqegOkkXBB3BIBsTOLEo9VlxdM3Gh0xCHfik4R1vwblVPmNB5LSFyvHU69ekUY0qisNQK2ZkuNaG/II/hMkscU4Om0umn/JVJ1RZcDkrrhVptSbWgC6iVIfTazje4NwDvKrmPZbGmqXp0CQxdT402F2Ctu19xY/OWPMMzDUwT4npuEYHTddYFzcdPHeVLtRh10OSAWbEM246avxGlZPG4xnaVW/yRjkVl9pPjKdRiuHDJvcFxdt+AL2vv1tsOZW+0uQYurX8GHL0wLqdSDfYWsWvawnThGw/eI1REDIKZJKFi+qnTYWI/WInVnWVCvTav3YDMD4So2AJt87Gbknyj0IzinFpLgj6PZvEGnTY0aiVUphRpdApId7KwDe6VN79Zz5j2ZxlTuz3LMQGDXdLi76gfa39oj5Q2DpjCruR4CFsRa/eM9yOvtn8JzLm7UsvWjTXxvVa7DkIqDUAQbjV3iD4Ayp4lG2zatRvlFQSb/1RI0ezuKH2fTQZTTdyTdB7aDfZjfdR9BLbl+DqoCSHVjffc9U2Njcg2PE86yqlpw1S62ZHRlNhyVe5+QBlzyjMNQAGn2dtYBHlcg7235mXJNKUXT8luqwTScm1y+iVpUaxplTTOqxA4sQSLbX24l3o1AwuOmx2I3+c8ayysS+K7xdBcBgGXSbU2XbTa49r53nsmGN0Q+aj+AmvTytNex5ueNM3xETSUCIiAIiIAiIgCIiAIiIAiIgCIiAIiIAld7S0vEj+alT8QQw/w95LFIrtBS1Ub+6wJ9A3gY/ss0A8pzxNAao4sTTCN5fksSi6vmK15HYXA0yamkBS1Kot125Qk7Dr4ZZs4waVqNRGVm1BSyrz7SXVfXwgn4St4Ls5XWrqRXFPQ66fHezU3QbabcnzmTMqad0+jmxy6NnZx8TRrINa1abnSysTexuOT8fPgniSGZYJBWpkU3dTapTqKBxubFrjcWsR12PBkXlmQ4xKtNtFcorKT4VAsrLsdTA254HEmKOXYkIq1EsiMzIr1Kd7nbUzsdh6AHp5StQckt3a6aKZRbOLHKzVqlNVZnYsNkNmRQdN+lw2+ryBvaRHaRWNTu2Gi6qWB6BlVnI8zfby2O99pKVsoxFPF1K1PEYemXYmz4hQdJa9tIPPP4SwthNRVmq0XNlBDWcBQNwllJ8R3+kryf41dXzfsRjj5v5IPLqVWpUohK3cq60lsEViCUVb+LytxGcYRqlNFqVaj8hvHbUQxO4G21wLgcASz0cvpitTqKyrZgoQBralc2Auotu1t/ITTiMDSW6vVXwsw8SHc6RdbkgE8G48uk9LRTjNOUl+3ZCby7mr48FQ+z00p0GKd4qVH8LksGH5MlTfm8tva7I6bYam+FVKIQK66VAQhyRdgNrEKo1dLjpecOJwOE7trValQIzNamqMbmwIG9hsoO9tredpN5HUp1cGwTvO77sp4wmsrTbSANNxq4t8pqzKLimkXYZTjLspFfA1fshBBpl6irc7KQpdGIB3ABJBvbj4yUw5RKdQlt0Vxq3DeGmXblfTqOl+oVbKMCn2cJ3b1go0hHcEgXLFVYL03tb4CcC9wdaDD9H9t331KQwPUE8bdL8W3xtQbtI1yy5Jfqdv3IzIKoqVbHxXDLqJJuCjH72/3Odumw4HqmUvfD0j+gv/ACiec5LXTUCMLSoopsGLMbmxFl1G5NyeOl+Ly/5Dc0KbEaSw9kXCgXNtKni43nUknwV232SkREkcEREAREQBERAEREAREQBERAEREAREQBOfGUe8punvKV+oInREA83zF6oR6gqOAQ+nxGwY0hU0nfpfb/Vo7KsU7supy1+bkmXLF5UzLUpCkXVmJBLqo3Z7+Z9l7cfdEicH2LqqwIdKYBBALNVIsb2J0peYNZp55GnHwa9PljFNSKfnVCocRrSwUhSSbk3HNh02AkVmWCK16n3QzueL3KsdJZ28IAHA4HkTPZf6qqKu+IWkqj/46NNbAdSamv6yLwWF+0sDTq12oIRZmcqKtuSgQLZALgN94nbYEm3Fp9kFFvoyZUpycvdnn2LwpFTvKdF6zlabDQjlRemhOpgLEn0/ytYsszBaZQmmd1voIswId1Kkci2kS+jJMNsTRRiOC41n6tcz4zrFLhcNUdEAIFkVQBdjsoAHqYz6WGaO1/8ASMU0UesK9Y06lJKntsxVVcWJYMCSQFsLAWv1n3V7M4uopHd2Oom7uoFmVb7AkjceUvOS4EUaKJtqIBcj7z6QGb4m1/nJGX6eHoKokJYlK7PNaPYDEFCj1aaXcNcan2CsCLWXzB56SyZN2YbD0hT74MACNqYHtPrJ3Y9QPpLNEulklJU2SjBR6IqnkqA311L7+ywTm1/zYXy5mz+psPq1NSDt7zkufq5JklEromaaeGRfZRV+AA/hN0ROgREQBERAEREAREQBERAEREAREQBERAEREAREQBOXHY2nRRqlRgqryT/AeZ9Jy5vmtPDquq7u5tTppu9RvIDy8ydgASZxYDKnquMRiyGcb06Y3Sl6j3n/AEvp5kDQmFq44h66mlhwbrROzPbhq3p/w/2uqyyogUAAWAn0BMwBK7mo7/GUKHK0vyz+WobUwfI3OofqmT1RwqljsACT8BuZB9mELiriW9qs9xxsi7IAeo5YejwCwREQBERAEREAREQBERAEREAREQBERAEREAREQBERAEREAREQBI3O8caNIlFDOxCoCbAs3Go9FABJO+ynY8SSlf7ToT3AvZSzggXBuaFSxBHFhq+ogG7KMm7pjVqt31dx4qhHA9xF+6g229BcmwtNSpf1Fil/3lwP/uq//oz6TJ8YD+fqW9Kv8ymAWuJWf6txg4xNUfHuW/ikz9jx4/3pvnSoH+FoB1dqHbuBTQkNVdadxyoY7sPUDf5GSmGohEVFAUKAABwABwJXc1OI14dXsV1Hx6QPHoa3gufU82m/usw/tV/dp/NALFEropZh/ar+7T+adVUYrUNJFgN/Cu58ratoBMRIYZuyG1VCvrbTf6kr/indRxtNuGA9Dt9L8/KAdcT41jzH1jWPMfWAfcT51Dzn1AEREAREQBERAEREAREQBERAEREAREQBERAEr3ahj+QVQbl3Ia1wCKFQAEDck6r2/RMsMi8/zNcLhqldrWQXF+rHZR9TAKxmOb4g0Wp11HidFIWm6nTrW4I1k2PHTZpIfbcX3VMUdJsNJL03Ps2G9m5lFSvUrf7RWqFy4RyCiJpJAYeyL+EADcm1vmfWcupBaSAbgjV+1v8A9YBAjEZn50P3VT+eZ7/MvOh+6qfzy0RAKtmlbEM+HU0+GLalViuvQ9geLb9Pxm4YzMP7On+7f/uSyRAK39rzD3Kf7t/+5OqtisVqARUtbe6VDv6G6iTUQCBOJxhFjTQj9R/55xVMJWNyKSoT7iuv1XXY/SWuIBUfsFS35pL+fdNz8mnA9Rlfu2+zq/ulGBva/Gry3nV/SD2lfCUlWmAXqbb+R2AX1O++9rcHaVrJMIvf0h3msM9lZyCBubhOm51bDreKBbsPl9UAnRTBI5Wm4J8rOH2+hllojwre/A5Nzx1PU+szTQKoUbACw+AmyAIiIAiIgCIiAIiIAiIgCImLwDMTF4vAMxMReAZmCYvMQDW15XO2uUNi8FUpBrNsy3vYsp2B267iWecmYC6WgHjmW5Zjaxp0KlIYemrhqtQCzVLabgW5J0DjbaezKG85Bmhx8ZO0m2EAyA3nMgN5zOqNUAyAZnefDvxMh4B97zO8+NUyTAPq58p86j7v4iY1TN4BTv6Qsk+10UK+GrTOpDcWP6JPTzBkP2RyHFVMTSrY10UULmnTTT4nN/G2kkbaj9T5mX/HUtQF5yYbD2dT5TgJmJ8Cfc6BERAEREAREQBERAEREA+YiIBiZiIAiIgCYiIAnPjOIiARrdJIU+BEQDYJkREAw8LEQD6E+jMxAEwJmIBrrcTSnIiIB2CfURAEREAREQBERAEREAREQD//2Q==");
+  background-repeat: no-repeat;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(150px, 0px); }
+  100%   { transform: translate(0, -0px); }
+}
+
+.whole{
+  display: flex;
+}
+
+.back{
+  text-decoration: none;
+  padding: 8px 20px;
+  margin-left: 5px;
+}
+.whole-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.vb{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.back{
+  margin-left: 5px;
+  font-weight: lighter;
+}
+.vb-1{
+  display: flex;
+  justify-content:left;
+  margin-top: 20px;
+}
+.three{
+  margin-top: 15px;
+}
+.four .two{
+  margin-left: 55px;
+}
+.custom-button-3 {
+  height: 2px;
+  padding: 10px 20px;
+  background-color: skyblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+.custom-button-3:hover {
+  background-color: deepskyblue;
+}
+.carousel-container {
+  width: 100%; /* Adjust the width as needed */
+  overflow: hidden;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+/* Define the carousel track to hold the images */
+.carousel-track {
+  display: flex;
+
+  animation: scroll 14s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Define each carousel item (image) */
+.carousel-item {
+  width: 300px; /* Adjust the width to match the container */
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/* Define keyframes for the scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.custom-input:hover{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.floating:hover{
+  width: 245px;
+  height: 200px;
+}

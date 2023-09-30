@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  customer_email: MyString
+  total_price: 9.99
+  total_tax_payable: 9.99
+  net_price: 9.99
+  rounded_down_value: 9.99
+  balance_payable_to_customer: 9.99
+
+two:
+  customer_email: MyString
+  total_price: 9.99
+  total_tax_payable: 9.99
+  net_price: 9.99
+  rounded_down_value: 9.99
+  balance_payable_to_customer: 9.99
