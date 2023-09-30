@@ -6,260 +6,278 @@
 
 .background {
   background-image: url("https://img.freepik.com/free-photo/abstract-blur-supermarket_74190-5265.jpg?size=626&ext=jpg");
-   background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
 }
-.end{
+
+.end {
   text-align: right;
   padding-right: 100px;
 }
+
 .main {
-    font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font you want to use */
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 600px; /* Adjust the maximum width as needed */
-    margin: 0 auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    max-width: 60%;
-    max-height: 50%;
-    opacity: 0.9;
+  font-family: 'Your Desired Font', sans-serif; /* Replace 'Your Desired Font' with the actual font you want to use */
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+  max-width: 60%;
+  max-height: 50%;
+  opacity: 0.9;
   padding-bottom: 60px;
-  }
-  /* Style the Customer Email input field */
-  .form-control {
-    width: 80%;
-    height: 10%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid black;
-    border-radius: 4px;
-  }
-  .form-control:hover{
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
-  }
+}
 
-  /* Style the "Generate Bill" button */
-  .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+/* Style the Customer Email input field */
+.form-control {
+  width: 80%;
+  height: 10%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
 
-  /* Add hover effect to buttons */
-  .btn-primary:hover {
-    background-color: #0056b3;
-  }
+.form-control:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
+}
 
-  /* Style the table */
-  table {
-    width: 80%;
-    border-collapse: collapse;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  table tr:nth-child(odd) {
-    background-color: #f2f2f2; /* Set your desired background color for odd rows */
-  }
+/* Style the "Generate Bill" button */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
-  /* Style even rows */
-  table tr:nth-child(even) {
-    background-color: #e0e0e0; /* Set your desired background color for even rows */
-  }
-  /* Style table headers */
-  table th {
-    background-color: #c7c7c7; /* Set your desired milder background color for table headers */
-    color: #333; /* Set your desired text color for table headers */
-    padding: 10px;
-    text-align: left;
-  }
+/* Add hover effect to buttons */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
 
-  /* Style table cells */
-  table td {
-    text-align: center;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
+/* Style the table */
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  /* Style the "Add New" button */
-  .btn-add-row {
-    background-color: #28a745;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+table tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Set your desired background color for odd rows */
+}
 
-  /* Add hover effect to "Add New" button */
-  .btn-add-row:hover {
-    background-color: #1f8d46;
-  }
+/* Style even rows */
+table tr:nth-child(even) {
+  background-color: #e0e0e0; /* Set your desired background color for even rows */
+}
 
-  /* Style the "Delete" button */
-  .btn-remove-row {
-    background-color: #dc3545;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+/* Style table headers */
+table th {
+  background-color: #c7c7c7; /* Set your desired milder background color for table headers */
+  color: #333; /* Set your desired text color for table headers */
+  padding: 10px;
+  text-align: left;
+}
 
-  /* Add hover effect to "Delete" button */
-  .btn-remove-row:hover {
-    background-color: #c82333;
-  }
-  /* Style the "Bill Section" header */
-  h1.bill-section-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #333; /* Change the color as needed */
-  }
+/* Style table cells */
+table td {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
 
-  /* Style the table */
-  table#products-table {
-    width: 100%;
-    border-collapse: collapse;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-  }
+/* Style the "Add New" button */
+.btn-add-row {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+/* Add hover effect to "Add New" button */
+.btn-add-row:hover {
+  background-color: #1f8d46;
+}
 
-  /* Style table cells */
-  table#products-table td {
-    border: none;
-    outline: none;
-  }
+/* Style the "Delete" button */
+.btn-remove-row {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  /* Style the select input */
-  .product-select {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+/* Add hover effect to "Delete" button */
+.btn-remove-row:hover {
+  background-color: #c82333;
+}
 
-  /* Style the quantity input field */
-  form.number_field.form-control {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+/* Style the "Bill Section" header */
+h1.bill-section-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333; /* Change the color as needed */
+}
 
-  /* Style the "Delete" button */
-  .btn-remove-row {
-    background-color: #dc3545;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  /* Add hover effect to "Delete" button */
-  .btn-remove-row:hover {
-    background-color: #c82339;
-  }
-
-  /* Style the "Add New" button */
-  .btn-add-row {
-    background-color: #28a745;
-    color: #fff;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  /* Add hover effect to "Add New" button */
-  .btn-add-row:hover {
-    background-color: #fff;
-    color: #28a745;
-    font-weight: bold;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-
-  /* Style the "Cancel" button */
-  .btn-secondary {
-    background-color: #ccc;
-    color: #000;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
+/* Style the table */
+table#products-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
 
 
-  .denomination-input{
-    width: 17vw;
-  }
-  .form-group1{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .denomination{
-    width: 22vw;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-  }
-  .email-field {
-    max-width: 300px; /* Adjust the maximum width as needed */
-  }
-  .cash-paid-field {
-    max-width: 150px; /* Adjust the maximum width as needed */
-  }
-  /* CSS for Generated Bill Page */
-  body {
-    font-family: Arial, sans-serif;
-  }
-  .cancel{
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 4px;
-    margin-right: 10px;
-    background-color: darksalmon;
-    transition: color .3s ease-in-out, box-shadow .1s ease-in-out;
-  }
-  .cancel:hover{
-    box-shadow: inset 100px 0 0 0 red;
-    color: white ;
-    opacity: 0.8;
-    font-weight: bold;
-  }
-  .white-background{
-    background: lightgrey;
-    padding: 5px;
-  }
-  .fle{
-    display: flex;
-    align-items: center;
-  }
-  .email{
-    background: white;
-    margin-left: 15px;
-    padding: 3px 10px;
-    border: 1px black solid;
-    border-radius: 5px;
-  }
-  .email:hover{
-    background: #ccc;
-    margin-left: 15px;
-    padding: 3px 10px;
-    border: 1px black solid;
-    border-radius: 5px;
-    color: black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+/* Style table cells */
+table#products-table td {
+  border: none;
+  outline: none;
+}
 
-  }
+/* Style the select input */
+.product-select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the quantity input field */
+form.number_field.form-control {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the "Delete" button */
+.btn-remove-row {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add hover effect to "Delete" button */
+.btn-remove-row:hover {
+  background-color: #c82339;
+}
+
+/* Style the "Add New" button */
+.btn-add-row {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add hover effect to "Add New" button */
+.btn-add-row:hover {
+  background-color: #fff;
+  color: #28a745;
+  font-weight: bold;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+/* Style the "Cancel" button */
+.btn-secondary {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+
+.denomination-input {
+  width: 17vw;
+}
+
+.form-group1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.denomination {
+  width: 22vw;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.email-field {
+  max-width: 300px; /* Adjust the maximum width as needed */
+}
+
+.cash-paid-field {
+  max-width: 150px; /* Adjust the maximum width as needed */
+}
+
+/* CSS for Generated Bill Page */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.cancel {
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: darksalmon;
+  transition: color .3s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+.cancel:hover {
+  box-shadow: inset 100px 0 0 0 red;
+  color: white;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.white-background {
+  background: lightgrey;
+  padding: 5px;
+}
+
+.fle {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  background: white;
+  margin-left: 15px;
+  padding: 3px 10px;
+  border: 1px black solid;
+  border-radius: 5px;
+}
+
+.email:hover {
+  background: #ccc;
+  margin-left: 15px;
+  padding: 3px 10px;
+  border: 1px black solid;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+}
 
 /* app/assets/stylesheets/products.css */
 
@@ -271,10 +289,12 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
   background-color: white; /* Add a background color */
 }
-.container:hover{
+
+.container:hover {
   border: 2px solid #ff6ec4;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 .custom-h2 {
   margin-bottom: 20px;
 }
@@ -307,6 +327,7 @@
   background-color: #ff4f9a;
   font-weight: bold;
 }
+
 .floating {
   width: 240px;
   height: 181px;
@@ -321,45 +342,58 @@
 }
 
 @keyframes floating {
-  0% { transform: translate(0,  0px); }
-  50%  { transform: translate(150px, 0px); }
-  100%   { transform: translate(0, -0px); }
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(150px, 0px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
-.whole{
+.whole {
   display: flex;
 }
 
-.back{
+.back {
   text-decoration: none;
   padding: 8px 20px;
   margin-left: 5px;
 }
-.whole-1{
+
+.whole-1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-.vb{
+
+.vb {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
-.back{
+
+.back {
   margin-left: 5px;
   font-weight: lighter;
 }
-.vb-1{
+
+.vb-1 {
   display: flex;
-  justify-content:left;
+  justify-content: left;
   margin-top: 20px;
 }
-.three{
+
+.three {
   margin-top: 15px;
 }
-.four .two{
+
+.four .two {
   margin-left: 55px;
 }
+
 .custom-button-3 {
   height: 2px;
   padding: 10px 20px;
@@ -370,9 +404,11 @@
   text-decoration: none;
   transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
+
 .custom-button-3:hover {
   background-color: deepskyblue;
 }
+
 .carousel-container {
   width: 100%; /* Adjust the width as needed */
   overflow: hidden;
@@ -406,10 +442,12 @@
     transform: translateX(-100%);
   }
 }
-.custom-input:hover{
+
+.custom-input:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.floating:hover{
+
+.floating:hover {
   width: 245px;
   height: 200px;
 }

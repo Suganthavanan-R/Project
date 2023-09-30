@@ -8,7 +8,6 @@ class InputController < ApplicationController
     session[:line_items] ||= []
   end
 
-
   def generate_bill
     denominations_params = params[:denominations].permit!
     # Step 1: Retrieve user input from the form
@@ -54,7 +53,7 @@ class InputController < ApplicationController
     # Pass the calculated bill details to the bill view for rendering.
     @customer_email = customer_email
     @line_items = session[:line_items]
-    @total_price_without_tax  = total_price_without_tax
+    @total_price_without_tax = total_price_without_tax
     @total_tax_payable = total_tax_payable
     @net_price = net_price
     @rounded_down_value = rounded_down_value
@@ -93,7 +92,7 @@ class InputController < ApplicationController
     @amount %= 2
 
     @one = @amount.floor
-    Bill.create(customer_email:@customer_email,total_price:@total_price_without_tax,total_tax_payable:@total_tax_payable,net_price:@net_price,rounded_down_value:@rounded_down_value,balance_payable_to_customer:@balance_payable_to_customer)
+    Bill.create(customer_email: @customer_email, total_price: @total_price_without_tax, total_tax_payable: @total_tax_payable, net_price: @net_price, rounded_down_value: @rounded_down_value, balance_payable_to_customer: @balance_payable_to_customer)
     render 'generate_bill'
   end
 
@@ -155,7 +154,6 @@ class InputController < ApplicationController
     return total_price_without_tax
   end
 
-
   def calculate_total_denominations(customer_denominations)
     total_denominations = 0
     customer_denominations.each do |denomination_value, quantity|
@@ -164,24 +162,24 @@ class InputController < ApplicationController
     total_denominations
   end
 
+  def add_line_item
+    product_id = params[:product_id]
+    quantity = params[:quantity].to_i
 
-    def add_line_item
-      product_id = params[:product_id]
-      quantity = params[:quantity].to_i
+    # Retrieve the product name based on the product_id (assuming you have a Product model)
+    product = Product.find(product_id)
+    product_name = product.name
 
-      # Retrieve the product name based on the product_id (assuming you have a Product model)
-      product = Product.find(product_id)
-      product_name = product.name
+    # Create a line item hash with product_id, product_name, and quantity
+    line_item = { product_id: product_id, product_name: product_name, quantity: quantity }
 
-      # Create a line item hash with product_id, product_name, and quantity
-      line_item = { product_id: product_id, product_name: product_name, quantity: quantity }
+    # Store the line item in the session
+    session[:line_items] << line_item
 
-      # Store the line item in the session
-      session[:line_items] << line_item
+    # Redirect back to the input page
+    redirect_to input_index_path
+  end
 
-      # Redirect back to the input page
-      redirect_to input_index_path
-    end
   def calculate_total_tax_payable(line_items)
     total_tax_payable = 0
 
