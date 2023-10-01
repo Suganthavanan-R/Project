@@ -80,7 +80,6 @@ GEM
     crass (1.0.6)
     date (3.3.3)
     erubi (1.12.0)
-    execjs (2.9.1)
     ffi (1.15.5)
     globalid (1.2.1)
       activesupport (>= 6.1)
@@ -195,8 +194,6 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
     web-console (4.2.1)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -233,7 +230,6 @@ DEPENDENCIES
   sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
-  uglifier
   web-console (>= 4.1.0)
   webdrivers
 
